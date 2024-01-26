@@ -8,5 +8,5 @@
 /dataSources.local.xml
 /.idea/*
 /.vscode/*
-/prepros.config
+/app/prepros.config
 /mysql/*
