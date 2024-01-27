@@ -1,5 +1,5 @@
 <?php
-require "koneksi.php";
+require "./config/koneksi.php";
 
 if (isset($_POST['login'])) {
     $email = $_POST['username'];
@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
         $kolom = mysqli_fetch_assoc($hasil);
         session_start();
         $_SESSION['nama'] = $kolom['nama'];
-        header("Location: navigasi.php");
+        header("Location: ../views/navigasi.php");
     } else {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
     }
