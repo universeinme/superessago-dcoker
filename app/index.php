@@ -3,40 +3,45 @@ require "./lib/login.php";
 ?>
 
 <?php
-include "./templates/head.php";
+include "./templates/headindex.php";
 ?>
 
-<body class="d-flex align-items-center py-4 bg-body-tertiary">
+<body class="bg-body-tertiary bg-login-image">
     <?php include "./templates/colormodes.php"; ?>
-
-    <main class="form-signin w-100 m-auto">
-        <form id="login" action="" method="post">
-            <img class=" mx-5 mb-4" src="./assets/imgs/logo.jpg" height="180" width="180">
-            <h1 class="h3 mb-3 fw-normal align-items-center">Silahkan Login</h1>
-
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" name="username"
-                    placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+    <div class="container">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-md-6">
+                <img src="../assets/imgs/logo.png" alt="Image" class="img-fluid">
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" name="password"
-                    placeholder="Password">
-                <label for="floatingPassword">Password</label>
+            <div class="col-md-6 contents">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mb-4">
+                            <h3>Selamat Datang</h3>
+                        </div>
+                        <form action="" method="post">
+                            <div class="form-group first">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+                            <div class="form-group last py-4">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="d-flex mb-2 align-items-center">
+                                <input class="" type="checkbox" value="remember-me" id="">
+                                <label class="px-2" for="">
+                                    Ingat Saya
+                                </label>
+                            </div>
+                            <input type="submit" value="Log In" class="btn btn-block btn-primary w-100" name="login">
+                        </form>
+                        <p class="mt-5 mb-3 text-body-secondary">&copy; Essago 2024</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="form-check text-start my-3">
-                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Ingat Saya
-                </label>
-            </div>
-            <button class="btn btn-primary w-100 py-2" type="submit" name="login">
-                <i class="bi-door-open"></i>Masuk
-            </button>
-            <p class="mt-5 mb-3 text-body-secondary">&copy; Essago 2024</p>
-        </form>
-    </main>
+        </div>
+    </div>
     <?php include "./templates/logincss.php"; ?>
     <?php include "./templates/js.php"; ?>
 
