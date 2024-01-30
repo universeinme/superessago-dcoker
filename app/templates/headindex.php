@@ -13,6 +13,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
 " rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/icommon.css">
     <meta name="Super Essago" content="Eko Priambodo">
     <title>Super Essago</title>
     <style>

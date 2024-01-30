@@ -27,6 +27,8 @@ services:
       MYSQL_PASSWORD: zxcv1234
     volumes:
       - ./mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
   adminer:
     image: adminer
     container_name: adminer
