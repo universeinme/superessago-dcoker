@@ -10,4 +10,4 @@
 /.vscode/*
 /app/prepros.config
 /mysql/*
-/Thumbs.db
+/app/assets/imgs/Thumbs.db
