@@ -1,5 +1,5 @@
 <?php
-require "./lib/login.php";
+require "./lib/reset.php";
 include "./templates/headindex.php";
 ?>
 
