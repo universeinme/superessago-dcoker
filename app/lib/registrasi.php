@@ -1,5 +1,6 @@
 <?php
 require "./config/koneksi.php";
+error_reporting(0);
 
 if (isset($_POST['daftar'])) {
     $nama = $_POST['nama'];
@@ -18,11 +19,12 @@ if (isset($_POST['daftar'])) {
                 $nama = "";
                 $username = "";
                 $_POST['password'] = "";
+                header("Location: ../index.php");
             } else {
                 echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
             }
         } else {
-            echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+            echo "<script>alert('Woops! Username Sudah Terdaftar.')</script>";
         }
 
     } else {
